@@ -1,14 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script src="jquery-3.6.3.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    hello
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about-us1">About Me</a>
+            <a href="#tours1">Skills</a>
+            <a href="#contact-us1">Contact Me</a>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <!-- Home/Intro Page -->
+    <section id="home">
+        <div class="part1">
+            <div class="home-container">
+                <h1>Welcome to My Portfolio Website</h1>
+                <p>Here I showcase my skillsets and facilities</p>
+                <a href="#tours" class="btn">See My Skills</a>
+            </div>
+        </div>
+
+        <div class="part2">
+            <div class="home-left">
+                <img src="./images/photo.jpg" alt="Tourism Company">
+            </div>
+            <div class="home-right">
+                <h1>Hello there...</h1>
+                <p>I am university student, who is highly curious about science and technology, and am willing to grow further into it.
+                    I am motivated to learn new skills, and make them a part of my daily life. I have many projects, the inspiration of 
+                    which was my curiousity. To learn more about me, scroll down to view more.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <br id="about-us1">
+    <section id="about-us">
+        <h1 class="section-header">About Me</h1>
+        <div class="about-container">
+            <div class="about-stats">
+                <h2>My Stats</h2>
+                <p><span class="bold">5+</span> Years of Experience</p>
+                <p><span class="bold">20+</span> Projects</p>
+                <p><span class="bold">100+</span> Smaller Projects</p>
+                <p><span class="bold">2 star</span> coder on CodeChef</p>
+                <p><span class="bold">200+</span> Questions on LeetCode</p>
+            </div>
+            <div class="about-achievements">
+                <h2>My Education</h2>
+                <ul>
+                    <li>St. Mary's School ICSE and ISC Board</li>
+                    <li>Student at IIT Kharagpur</li>
+                    <li>Many Online Courses, and many courses on Youtube</li>
+                </ul>
+            </div>
+            <div class="about-achievements">
+                <h2>My Achievements</h2>
+                <ul>
+                    <li>Many successfully deployed Projects</li>
+                    <li>JEE Advanced 2022 <br> AIR-4176</li>
+                    <li>JEE Mains 2022 <br> AIR-9111</li>
+                </ul>
+            </div>
+            <!-- <div class="about-reviews">
+                <h2>What Our Customers Say</h2>
+                <p class="customer-review">"The best tour I have ever been on. The guide was knowledgeable and friendly,
+                    and the destinations were breathtaking. I would highly recommend this company to anyone looking for
+                    a memorable travel experience."</p>
+                <p class="customer-name">- Jane Doe</p>
+            </div> -->
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <br id="tours1">
+    <section id="skills" class="skills">
+        <h2 class="section-header">My Skills</h2>
+        <div class="skill-cards">
+            <div class="skill-card">
+                <img src="images/home-img1.jpg" alt="skill 1">
+                <h3 class="skill-card-title">HTML</h3>
+                <p class="skill-card-destination">Experience: 3+ Years</p>
+                <p class="skill-card-description">For the frontend markup part of Web Development</p>
+                <a href="#" class="skill-card-link">Learn More</a>
+            </div>
+            <div class="skill-card">
+                <img src="images/home-img1.jpg" alt="skill 2">
+                <h3 class="skill-card-title">CSS</h3>
+                <p class="skill-card-destination">Experience: 3+ years</p>
+                <p class="skill-card-description">For the frontend styling part of Web Development</p>
+                <a href="#" class="skill-card-link">Learn More</a>
+            </div>
+            <div class="skill-card">
+                <img src="images/home-img1.jpg" alt="skill 3">
+                <h3 class="skill-card-title">JS</h3>
+                <p class="skill-card-destination">Experience: 3+ years</p>
+                <p class="skill-card-description">For the frontend functionality part of Web Development</p>
+                <a href="#" class="skill-card-link">Learn More</a>
+            </div>
+            <div class="skill-card">
+                <img src="images/home-img1.jpg" alt="skill 3">
+                <h3 class="skill-card-title">Java</h3>
+                <p class="skill-card-destination">Experience: 5+ years</p>
+                <p class="skill-card-description">Mostly I use Java for Competitive Programming, and have been using it for about 5 year or so</p>
+                <a href="#" class="skill-card-link">Learn More</a>
+            </div>
+            <div class="skill-card">
+                <img src="images/home-img1.jpg" alt="skill 3">
+                <h3 class="skill-card-title">Python</h3>
+                <p class="skill-card-destination">Experience: 4+ Years</p>
+                <p class="skill-card-description">I use python for Game Development and general purpose programming</p>
+                <a href="#" class="skill-card-link">Learn More</a>
+            </div>
+            <div class="skill-card">
+                <img src="images/home-img1.jpg" alt="skill 3">
+                <h3 class="skill-card-title">C++</h3>
+                <p class="skill-card-destination">Experience: 1+ years</p>
+                <p class="skill-card-description">Mostly I use C++ for Competitive Programming, and have been using it for about an year or so</p>
+                <a href="#" class="skill-card-link">Learn More</a>
+            </div>
+            <!-- Add more tour cards here -->
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <h2 class="section-header">My Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="images/home-img1.jpg" alt="project 1">
+                <h3 class="project-card-title">The Minimalist</h3>
+                <p class="project-card-destination">Website</p>
+                <p class="project-card-description">A single page static website with beautiful css animations</p>
+                <a href="https://the-minimalist-uday.web.app" target="_blank" class="project-card-link">Visit
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com/ImaginedTime/The-Minimalist" target="_blank" class="project-card-link">Open on 
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="project-card">
+                <img src="images/home-img1.jpg" alt="project 2">
+                <h3 class="project-card-title">Particle JS</h3>
+                <p class="project-card-destination">Library / FrameWork</p>
+                <p class="project-card-description">A library made in JS that can be used to simulate particles on the background of Websites</p>
+                <a href="https://particlejs-uday.web.app/" class="project-card-link">Sample
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com/ImaginedTime/ParticlesJS.js" class="project-card-link">Open on 
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="project-card">
+                <img src="images/home-img1.jpg" alt="project 3">
+                <h3 class="project-card-title">Tourism Website</h3>
+                <p class="project-card-destination">Website</p>
+                <p class="project-card-description">A single page static tourism Website</p>
+                <a href="https://imaginedtime.github.io/Tourism-Website" class="project-card-link">Visit
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com/ImaginedTime/Tourism-Website" class="project-card-link">Open on 
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="project-card">
+                <img src="images/home-img1.jpg" alt="project 3">
+                <h3 class="project-card-title">Tetris Game</h3>
+                <p class="project-card-destination">A Game</p>
+                <p class="project-card-description">A 2 player Tetris game made using JS</p>
+                <a href="https://tetris-uday.web.app" class="project-card-link">Play
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com/ImaginedTime/Tetris" class="project-card-link">Open on 
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="project-card">
+                <img src="images/home-img1.jpg" alt="project 3">
+                <h3 class="project-card-title">Minesweeper</h3>
+                <p class="project-card-destination">A Game</p>
+                <p class="project-card-description">A Minesweeper Game made using JS</p>
+                <a href="https://imaginedtime.github.io/Minesweeper" class="project-card-link">Play
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com/ImaginedTime/Minesweeper" class="project-card-link">Open on 
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="project-card">
+                <img src="images/home-img1.jpg" alt="project 3">
+                <h3 class="project-card-title">Sudoku GenSolve</h3>
+                <p class="project-card-destination">A Game</p>
+                <p class="project-card-description">A Sudoku Generator and solver made using Java</p>
+                <a href="https://github.com/ImaginedTime/Sudoku" class="project-card-link">Open on 
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="project-card">
+                <img src="images/home-img1.jpg" alt="project 3">
+                <h3 class="project-card-title">Mask Website</h3>
+                <p class="project-card-destination">Website</p>
+                <p class="project-card-description">A multiple page website made for the MASK Selection</p>
+                <a href="https://imaginedtime.github.io/MASK-Website" class="project-card-link">Visit
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com/ImaginedTime/MASK-Website" class="project-card-link">Open on 
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="project-card">
+                <img src="images/home-img1.jpg" alt="project 3">
+                <h3 class="project-card-title">And Many more</h3>
+                <p class="project-card-destination">.......</p>
+                <p class="project-card-description">Visit my Github Profile for more</p>
+                <a href="https://github.com/ImaginedTime/" class="project-card-link">Open 
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Add more project cards here -->
+        </div>
+    </section>
+
+
+    <!-- Contact Us -->
+    <br id="contact-us1">
+    <section id="contact-us">
+        <h2 class="section-header">Contact Us</h2>
+        <form action="#">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <label for="contact-no">Contact Number:</label>
+                <input type="tel" id="contact-no" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <br>
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/ImaginedTime/" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100087429944784" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com/uday_srivastava05/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/uday-om-srivastava-69165a256/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="demo-links">
+                <p>Copyright &copy; 2023 | All Rights Reserved</p>
+                <p>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+        <a href="#home" class="back-to-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </footer>
+
+
 </body>
+
 </html>
