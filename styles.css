@@ -170,8 +170,8 @@ body::-webkit-scrollbar{
 }
 
 
-/* About Us */
-#about-us {
+/* About Me */
+#about-me {
     padding: 80px 0;
     background-color: white;
 }
@@ -219,7 +219,8 @@ body::-webkit-scrollbar{
     margin-bottom: 20px;
 }
 
-/* skills */
+
+/* Skills */
 .skills,
 .projects {
     padding: 80px 0;
@@ -291,8 +292,8 @@ body::-webkit-scrollbar{
     margin: 20px;
 }
 
-.skill-card-destination,
-.project-card-destination {
+.skill-card-experience,
+.project-card-type {
     font-size: 18px;
     color: #999;
     margin: 20px;
@@ -338,7 +339,14 @@ body::-webkit-scrollbar{
     flex-direction: column;
     align-items: center;
     width: 60%;
-    margin: 0 auto;
+    margin: auto;
+}
+
+#contact-us form div:nth-child(1), #contact-us form div:nth-child(3){
+    width: 70%;
+}
+#contact-us form div:nth-child(2){
+    width: 60%;
 }
 
 #contact-us label,
@@ -352,9 +360,10 @@ body::-webkit-scrollbar{
 }
 
 #contact-us button[type="submit"] {
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: #333;
     color: #fff;
+    font-size: 1.1rem;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -424,6 +433,7 @@ footer {
     color: black;
 }
 
+/* media queries */
 @media only screen and (max-width: 768px) {
     .navbar {
         justify-content: space-between;
@@ -472,7 +482,8 @@ footer {
         margin-bottom: 20px;
     }
 
-    #about-us {
+    #about-me
+ {
         padding: 30px 0;
     }
 
@@ -507,7 +518,7 @@ footer {
         margin: 10px auto;
     }
 
-    #about-us p,
+    #about-me p,
     #skills ul,
     #projects ul #contact-us p {
         width: 90%;
@@ -527,6 +538,10 @@ footer {
     .project-card {
         width: 80%;
         margin: 2% auto;
+    }
+
+    #contact-us form div:nth-child(1){
+        width: 85%;
     }
 
     footer p {
