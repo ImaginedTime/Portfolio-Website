@@ -201,32 +201,30 @@ body {
     margin-bottom: 20px;
 }
 
-.bold {
-    font-weight: bold;
-}
-
-
 /* skills */
-.skills, .projects {
+.skills,
+.projects {
     padding: 80px 0;
     background-color: #f2f2f2;
 }
 
-.skill-cards, .project-cards {
+.skill-cards,
+.project-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.skill-card{
+.skill-card {
     width: 30%;
 }
 
-.project-card{
+.project-card {
     width: 22%;
 }
 
-.skill-card, .project-card {
+.skill-card,
+.project-card {
     height: 500px;
     margin: 1%;
     display: inline-block;
@@ -238,51 +236,60 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.skill-card::-webkit-scrollbar, .project-card::-webkit-scrollbar{
+.skill-card::-webkit-scrollbar,
+.project-card::-webkit-scrollbar {
     display: none;
 }
 
-.skill-card:hover, .project-card:hover {
+.skill-card:hover,
+.project-card:hover {
     scale: 1.05;
 }
 
-.skill-card img , .project-card img{
+.skill-card img,
+.project-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.skill-card h3 , .project-card h3{
+.skill-card h3,
+.project-card h3 {
     font-size: 1.5em;
     margin-top: 20px;
 }
 
-.skill-card p , .project-card p{
+.skill-card p,
+.project-card p {
     font-size: 1.2em;
-    color: #333;
+    color: black;
     margin: 20px;
 }
 
-.skill-card-title , .project-card-title{
+.skill-card-title,
+.project-card-title {
     font-size: 24px;
     font-weight: bold;
     margin: 20px;
 }
 
-.skill-card-destination , .project-card-destination{
+.skill-card-destination,
+.project-card-destination {
     font-size: 18px;
     color: #999;
     margin: 20px;
 }
 
-.skill-card-description , .project-card-description{
+.skill-card-description,
+.project-card-description {
     font-size: 14px;
     color: #333;
     margin: 20px;
     margin-bottom: 40px;
 }
 
-.skill-card-link , .project-card-link{
+.skill-card-link,
+.project-card-link {
     display: inline-block;
     padding: 10px 20px;
     background-color: #333;
@@ -294,7 +301,8 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.skill-card-link:hover, .project-card-link:hover{
+.skill-card-link:hover,
+.project-card-link:hover {
     scale: 1.05;
     color: black;
     background-color: #FFBD39;
@@ -442,7 +450,7 @@ footer {
         width: 80%;
     }
 
-    .section-header{
+    .section-header {
         margin-bottom: 20px;
     }
 
@@ -464,10 +472,11 @@ footer {
         width: 100%;
     }
 
-    .about-stats h2{
+    .about-stats h2 {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
     .about-achievements h2,
     .about-reviews h2 {
         margin-top: 40px;
@@ -482,20 +491,22 @@ footer {
 
     #about-us p,
     #skills ul,
-    #projects ul
-    #contact-us p {
+    #projects ul #contact-us p {
         width: 90%;
     }
 
-    #skills, #projects {
+    #skills,
+    #projects {
         padding: 20px 0;
     }
 
-    #skills p, #projects p {
+    #skills p,
+    #projects p {
         font-size: 16px;
     }
 
-    .skill-card , .project-card{
+    .skill-card,
+    .project-card {
         width: 80%;
         margin: 2% auto;
     }
