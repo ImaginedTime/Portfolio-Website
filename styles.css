@@ -13,7 +13,7 @@ body {
     background-color: #f2f2f2;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
@@ -77,14 +77,16 @@ body::-webkit-scrollbar{
     transition: 0.3s ease-in-out;
 }
 
-.active:first-child{
+.active:first-child {
     transform-origin: 30% 50%;
     transform: rotate(45deg);
 }
-.active:nth-child(2){
+
+.active:nth-child(2) {
     display: none;
 }
-.active:last-child{
+
+.active:last-child {
     transform-origin: 40% 20%;
     transform: rotate(-45deg) translate(1px, -3px);
 }
@@ -331,51 +333,90 @@ body::-webkit-scrollbar{
 
 /* Contact Us */
 #contact-us {
-    text-align: center;
+    width: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10%;
+    background-color: white;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
-#contact-us form {
+.contact-us-inputs-container h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+#contact-us h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666
+}
+
+#contact-us .inputs-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 60%;
     margin: auto;
+    gap: 20px;
 }
 
-#contact-us form div:nth-child(1), #contact-us form div:nth-child(3){
-    width: 70%;
-}
-#contact-us form div:nth-child(2){
-    width: 60%;
-}
-
-#contact-us label,
-#contact-us input,
-#contact-us textarea {
+.inputs-container input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    box-sizing: border-box;
     resize: none;
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    outline: hidden;
+    font-size: 1rem;
 }
 
-#contact-us button[type="submit"] {
-    padding: 10px 30px;
+.inputs-container input[type="button"] {
+    width: 40%;
+    height: 30%;
     background-color: #333;
-    color: #fff;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+    border-radius: 500px;
+    font-size: 1.2rem;
+    color: white;
     transition: 0.2s ease-in-out;
 }
 
-#contact-us button[type="submit"]:hover {
-    scale: 1.1;
-    color: black;
+.inputs-container input[type="button"]:hover {
     background-color: #FFBD39;
+    scale: 1.05;
 }
 
+.contact-info {
+    position: absolute;
+    transform: translateX(-80%);
+    background-color: #333;
+    box-shadow: 0 0 5px #333;
+    color: #edd;
+    padding: 20px;
+    width: 25%;
+    height: 50%;
+    padding: 40px;
+}
+
+.location,
+.phone,
+.email {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.contact-info h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    text-align: left;
+}
 
 
 /* Footer */
@@ -482,8 +523,7 @@ footer {
         margin-bottom: 20px;
     }
 
-    #about-me
- {
+    #about-me {
         padding: 30px 0;
     }
 
@@ -540,8 +580,32 @@ footer {
         margin: 2% auto;
     }
 
-    #contact-us form div:nth-child(1){
-        width: 85%;
+    .skill-card img,
+    .project-card img {
+        height: 50%;
+        object-fit: cover;
+    }
+
+    #contact-us {
+        width: 90%;
+        padding: 0;
+        background-color: #f2f2f2;
+        box-shadow: none;
+    }
+
+    .contact-us-inputs-container {
+        background-color: white;
+        padding: 40px 0;
+        box-shadow: 0 0 10px #999;
+    }
+
+    .contact-info {
+        transform: translateX(0%);
+        position: unset;
+        box-shadow: 0 0 10px #333;
+        width: 90%;
+        padding: 40px;
+        margin: 20px auto 40px auto;
     }
 
     footer p {
@@ -550,5 +614,12 @@ footer {
 
     .demo-links {
         text-align: left;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .skill-card img,
+    .project-card img {
+        height: 30%;
     }
 }
