@@ -6,7 +6,6 @@ $(document).ready(function () {
 });
 
 
-
 // // to check whether the media query detects properly
 // setInterval(check, 50);
 // function check(){

@@ -474,8 +474,22 @@ footer {
     color: black;
 }
 
+@media only screen and (min-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
 /* media queries */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .navbar {
         justify-content: space-between;
     }
