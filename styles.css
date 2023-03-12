@@ -459,6 +459,7 @@ footer {
 
 .back-to-top {
     position: fixed;
+    display: none;
     bottom: 20px;
     right: 20px;
     background-color: #333;

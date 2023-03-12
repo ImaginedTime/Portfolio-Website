@@ -5,8 +5,14 @@ $(document).ready(function () {
     });
 });
 
-
-
+// back-to-top button appears when the page is scrolled 
+$(document).scroll(function () {
+    let y = $(this).scrollTop();
+    if (y > 300)
+        $(".back-to-top").fadeIn();
+    else
+        $(".back-to-top").fadeOut();
+});
 
 
 // // to check whether the media query detects properly
