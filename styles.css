@@ -21,8 +21,8 @@ body::-webkit-scrollbar {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
+    align-items: flex-start;
+    padding: 5px 30px;
     position: fixed;
     top: 0;
     left: 0;
@@ -34,19 +34,16 @@ body::-webkit-scrollbar {
 
 .logo {
     display: flex;
-    align-items: center;
 }
 
 .logo img {
-    width: min(50px, 17vw);
-    height: min(50px, 17vw);
+    width: 50px;
+    height: 50px;
 }
 
 .nav-links {
     display: flex;
     justify-content: space-between;
-    width: 50%;
-    margin-right: 20px
 }
 
 .nav-links a {
@@ -65,6 +62,7 @@ body::-webkit-scrollbar {
 }
 
 .hamburger {
+    margin-top: 10px;
     display: none;
     cursor: pointer;
 }
@@ -398,7 +396,6 @@ body::-webkit-scrollbar {
     color: #edd;
     padding: 20px;
     width: 25%;
-    height: 50%;
     padding: 40px;
 }
 
@@ -475,22 +472,8 @@ footer {
     color: black;
 }
 
-@media only screen and (min-width: 768px) {
-    .navbar {
-        justify-content: space-between;
-    }
-
-    .nav-links {
-        display: flex;
-    }
-
-    .hamburger {
-        display: none;
-    }
-}
-
 /* media queries */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .navbar {
         justify-content: space-between;
     }
@@ -629,6 +612,20 @@ footer {
 
     .demo-links {
         text-align: left;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
     }
 }
 
